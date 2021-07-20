@@ -1,0 +1,221 @@
+{
+    "name": "Temperate",
+    "color": "#8BD03C",
+    "landBiomes": [
+        "temperate/tem-plateau",
+        "temperate/tem-flower-forest",
+        "temperate/tem-stranged-plains",
+        "temperate/tem-longtree-forest",
+        "temperate/tem-sakura-pink-forest",
+        "temperate/tem-oak",
+        "temperate/tem-plains",
+        "temperate/tem-oak-forest",
+        "temperate/tem-wilds",
+        "temperate/tem-birch-forest"
+    ],
+    "shoreBiomes": [
+        "temperate/tem-beach",
+        "temperate/tem-oak-beach"
+    ],
+    "seaBiomes": [
+        "ocean/oce-tem-river",
+        "ocean/oce-deep"
+    ],
+    "caveBiomes": [
+        "cave/old-cavern",
+        "cave/cracked-cavern",
+        "cave/lit-cavern"
+    ],
+    "riverBiomes": ["ocean/oce-tem-river"],
+    "jigsawStructures": [{
+        "structure": "murky_stronghold",
+        "rarity": 750
+    }],
+        "entityInitialSpawns": [
+        {
+            "entity": "chicken",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 14
+        },
+        {
+            "entity": "cow",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 14
+        },
+        {
+            "entity": "pig",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 14
+        },
+        {
+            "entity": "sheep",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 14
+        },
+        {
+            "entity": "wolf",
+            "maxSpawns": 2,
+            "minSpawns": 0,
+            "rarity": 18
+        },
+        {
+            "entity": "goat",
+            "maxSpawns": 2,
+            "minSpawns": 0,
+            "rarity": 38
+        },
+        {
+            "entity": "horse",
+            "maxSpawns": 3,
+            "minSpawns": 0,
+            "rarity": 60
+        },
+        {
+            "entity": "llama",
+            "maxSpawns": 3,
+            "minSpawns": 0,
+            "rarity": 65
+        },
+        {
+            "entity": "fox",
+            "maxSpawns": 1,
+            "minSpawns": 0,
+            "rarity": 40
+        },
+        {
+            "entity": "bee",
+            "maxSpawns": 1,
+            "minSpawns": 0,
+            "rarity": 30
+        }
+    ],
+    "shoreRatio": 0.1,
+    "shoreBiomeZoom": 0.15,
+    "biomeImplosionRatio": 0.7,
+    "deposits": [{
+        "minHeight": 15,
+        "maxPerChunk": 3,
+        "maxHeight": 122,
+        "minPerChunk": 1,
+        "minSize": 4,
+        "maxSize": 12,
+        "palette": [
+            {"block": "iron_ore"},
+            {"block": "coal_ore"}
+        ],
+        "varience": 4
+    }],
+    "objects": [
+        {
+            "heightmap": {
+                "seed": 1337,
+                "style": {
+                    "style": "SIMPLEX",
+                    "multiplier": 10
+                },
+                "offsetY": 5
+            },
+            "chance": 0.05,
+            "bottom": true,
+            "density": 1,
+            "place": [
+                "structures/amethyst1",
+                "structures/amethyst2",
+                "structures/amethyst3",
+                "structures/amethyst4",
+                "structures/amethyst5",
+                "structures/amethyst6"
+            ],
+            "edit": [{
+                "find": [{"block": "glass"}],
+                "replace": {"palette": [{"block": "void_air"}]}
+            }],
+            "enabled": true,
+            "xAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "yAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "translate": {
+                "yRandom": 10,
+                "y": 2
+            }
+        },
+        {
+            "name": "standard-surface-portals",
+            "chance": 0.001,
+            "place": [
+                "clutter/swordnp2",
+                "clutter/swordnp1",
+                "structures/giantportal1",
+                "structures/giantportal2",
+                "structures/giantportal3",
+                "structures/portal1",
+                "structures/portal2",
+                "structures/portal3",
+                "structures/portal4",
+                "structures/portal5",
+                "structures/portal6",
+                "structures/portal7",
+                "structures/portal8",
+                "structures/portal9",
+                "structures/portal10"
+            ],
+            "edit": [
+                {
+                    "find": [{"block": "gold_block"}],
+                    "replace": {"palette": [{"block": "air"}]},
+                    "chance": 0.1
+                },
+                {
+                    "find": [{"block": "netherrack"}],
+                    "replace": {"palette": [{"block": "magma_block"}]},
+                    "chance": 0.07
+                },
+                {
+                    "find": [{"block": "obsidian"}],
+                    "replace": {"palette": [{"block": "crying_obsidian"}]},
+                    "chance": 0.15
+                },
+                {
+                    "find": [{"block": "lava"}],
+                    "replace": {"palette": [{"block": "magma_block"}]},
+                    "chance": 0.2
+                }
+            ],
+            "mode": "VACUUM",
+            "carvingSupport": "SURFACE_ONLY"
+        }
+    ],
+    "riverRarity": 1,
+    "landBiomeZoom": 4,
+    "riverStyle": {
+        "style": "GLOB_IRIS_DOUBLE",
+        "zoom": 4.925,
+        "exponent": 3.1
+    },
+    "shoreHeightMin": 1,
+    "shoreHeightMax": 5.2,
+    "loot": {
+        "mode": "ADD",
+        "multiplier": 1,
+        "tables": [
+            "global-tools",
+            "global-treasure",
+            "temperate-clutter",
+            "temperate-food"
+        ]
+    },
+    "shoreHeightZoom": 1.14,
+    "riverThickness": 0.025,
+    "rarity": 1
+}

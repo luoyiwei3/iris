@@ -1,0 +1,228 @@
+{
+    "name": "Tropical",
+    "color": "#0F3415",
+    "landBiomes": [
+        "tropical/tro-rainforest",
+        "tropical/tro-plains",
+        "tropical/tro-bamboo-forest",
+        "tropical/tro-rainforest-wicked",
+        "tropical/tro-volcanic-plains",
+        "tropical/tro-mountain",
+        "tropical/tro-mountain-extreme",
+        "tropical/tro-mountain-plains",
+        "tropical/tro-wilds",
+        "tropical/tro-plains-hills"
+    ],
+    "shoreBiomes": [
+        "tropical/tro-island-beach",
+        "tropical/tro-beach",
+        "tropical/tro-submerged-volcanic",
+        "tropical/tro-beach-bamboo"
+    ],
+    "seaBiomes": [
+        "tropical/tro-submerged-volcanic",
+        "ocean/oce-tro-ocean",
+        "tropical/tro-rainforest-island",
+        "ocean/oce-tro-river-soft"
+    ],
+    "caveBiomes": [
+        "cave/tropical-cavern",
+        "cave/cavern-coral",
+        "cave/cavern-root"
+    ],
+    "biomeImplosionRatio": 0.25,
+    "riverStyle": {
+        "style": "VASCULAR",
+        "zoom": 4.77,
+        "fracture": {
+            "multiplier": 240,
+            "style": "IRIS",
+            "zoom": 5
+        }
+    },
+        "entityInitialSpawns": [
+        {
+            "entity": "chicken",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 18
+        },
+        {
+            "entity": "cow",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 18
+        },
+        {
+            "entity": "pig",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 18
+        },
+        {
+            "entity": "sheep",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 18
+        },
+        {
+            "entity": "wolf",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 39
+        },
+        {
+            "entity": "ocelot",
+            "maxSpawns": 2,
+            "minSpawns": 0,
+            "rarity": 10
+        },
+        {
+            "entity": "parrot",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 15
+        },
+        {
+            "entity": "turtle",
+            "maxSpawns": 1,
+            "minSpawns": 1,
+            "rarity": 80
+        },
+        {
+            "entity": "panda",
+            "maxSpawns": 3,
+            "minSpawns": 1,
+            "rarity": 40
+        },
+        {
+            "entity": "pandaUwU",
+            "maxSpawns": 1,
+            "minSpawns": 1,
+            "rarity": 150
+        },
+        {
+            "entity": "aeternum",
+            "maxSpawns": 1,
+            "minSpawns": 1,
+            "rarity": 200
+        }
+    ],
+    "jigsawStructures": [{
+        "structure": "murky_stronghold",
+        "rarity": 750
+    }],
+    "deposits": [{
+        "minHeight": 25,
+        "maxPerChunk": 3,
+        "maxHeight": 40,
+        "minPerChunk": 1,
+        "minSize": 1,
+        "maxSize": 2,
+        "palette": [{"block": "emerald_ore"}],
+        "varience": 2
+    }],
+    "landBiomeZoom": 1.85,
+    "shoreHeightMin": 3.2,
+    "shoreHeightMax": 9.2,
+    "loot": {
+        "mode": "ADD",
+        "multiplier": 1,
+        "tables": [
+            "global-clutter",
+            "global-tools",
+            "tropical-treasure",
+            "tropical-food",
+            "forest-food"
+        ]
+    },
+    "objects": [
+        {
+            "heightmap": {
+                "seed": 1337,
+                "style": {
+                    "style": "SIMPLEX",
+                    "multiplier": 10
+                },
+                "offsetY": 5
+            },
+            "chance": 0.05,
+            "bottom": true,
+            "density": 1,
+            "place": [
+                "structures/amethyst1",
+                "structures/amethyst2",
+                "structures/amethyst3",
+                "structures/amethyst4",
+                "structures/amethyst5",
+                "structures/amethyst6"
+            ],
+            "edit": [{
+                "find": [{"block": "glass"}],
+                "replace": {"palette": [{"block": "void_air"}]}
+            }],
+            "enabled": true,
+            "xAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "yAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "translate": {
+                "yRandom": 10,
+                "y": 2
+            }
+        },
+        {
+            "name": "standard-surface-portals",
+            "chance": 0.001,
+            "place": [
+                "clutter/swordnp2",
+                "clutter/swordnp1",
+                "structures/giantportal1",
+                "structures/giantportal2",
+                "structures/giantportal3",
+                "structures/portal1",
+                "structures/portal2",
+                "structures/portal3",
+                "structures/portal4",
+                "structures/portal5",
+                "structures/portal6",
+                "structures/portal7",
+                "structures/portal8",
+                "structures/portal9",
+                "structures/portal10"
+            ],
+            "edit": [
+                {
+                    "find": [{"block": "gold_block"}],
+                    "replace": {"palette": [{"block": "air"}]},
+                    "chance": 0.1
+                },
+                {
+                    "find": [{"block": "netherrack"}],
+                    "replace": {"palette": [{"block": "magma_block"}]},
+                    "chance": 0.07
+                },
+                {
+                    "find": [{"block": "obsidian"}],
+                    "replace": {"palette": [{"block": "crying_obsidian"}]},
+                    "chance": 0.15
+                },
+                {
+                    "find": [{"block": "lava"}],
+                    "replace": {"palette": [{"block": "magma_block"}]},
+                    "chance": 0.2
+                }
+            ],
+            "mode": "VACUUM",
+            "carvingSupport": "SURFACE_ONLY"
+        }
+    ],
+    "shoreHeightZoom": 2.14,
+    "rarity": 5
+}

@@ -1,0 +1,136 @@
+{
+    "name": "Tropical Cavern",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "generators": [{
+        "min": 4,
+        "max": 6,
+        "generator": "plain"
+    }],
+    "layers": [{
+        "minHeight": 1,
+        "maxHeight": 2,
+        "style": {"style": "STATIC"},
+        "zoom": 0.1,
+        "palette": [
+            {
+                "weight": 2,
+                "block": "stone"
+            },
+            {
+                "block": "jungle_leaves",
+                "data": {"persistent": true}
+            },
+            {
+                "weight": 2,
+                "block": "stone"
+            },
+            {"block": "andesite"},
+            {
+                "weight": 2,
+                "block": "stone"
+            },
+            {"block": "andesite"},
+            {"block": "stone"}
+        ]
+    }],
+    "entitySpawnOverrides": [{
+        "trigger": "SKELETON",
+        "entity": "shroud",
+        "cancelSourceSpawn": true,
+        "rarity": 12
+    }],
+    "decorators": [{
+        "chance": 1.0E-5,
+        "palette": [{"block": "barrel"}]
+    }],
+    "objects": [
+        {
+            "chance": 0.00175,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": ["clutter/camp1"],
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "mode": "PAINT",
+            "chance": 0.005,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": ["clutter/bincluster1"],
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.005,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "clutter/boulder1",
+                "clutter/boulder2",
+                "clutter/boulder3",
+                "clutter/boulder4",
+                "clutter/boulder5",
+                "clutter/boulder6",
+                "clutter/boulder7",
+                "clutter/boulder8",
+                "clutter/boulder9",
+                "clutter/boulder10",
+                "clutter/boulder11",
+                "clutter/boulder12",
+                "clutter/boulder13",
+                "clutter/boulder14",
+                "clutter/boulder15"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -2,
+                "z": 0
+            }
+        }
+    ],
+    "slab": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {
+                "data": {
+                    "waterlogged": false,
+                    "type": "bottom"
+                },
+                "block": "stone_slab"
+            },
+            {
+                "weight": 7,
+                "block": "air"
+            }
+        ]
+    }
+}
